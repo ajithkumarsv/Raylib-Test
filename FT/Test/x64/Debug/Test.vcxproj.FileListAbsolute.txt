@@ -1,0 +1,2 @@
+C:\Users\fff\source\repos\Test\Test\x64\Debug\Test.vcxproj.CopyComplete
+C:\Users\fff\Documents\C++\Raylib-Test\FT\Test\x64\Debug\Test.vcxproj.CopyComplete
