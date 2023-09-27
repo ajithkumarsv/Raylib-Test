@@ -1,1 +1,6 @@
-﻿  Test.vcxproj -> D:\RayLibProjects\Raylib-Test\FT\x64\Debug\Test.exe
+﻿  Entry.cpp
+D:\RayLibProjects\Raylib-Test\FT\Test\Obj2D.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\RayLibProjects\Raylib-Test\FT\Test\Entry.cpp(42,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\RayLibProjects\Raylib-Test\FT\Test\Entry.cpp(42,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Test.vcxproj -> D:\RayLibProjects\Raylib-Test\FT\x64\Debug\Test.exe

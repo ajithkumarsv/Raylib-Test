@@ -6,7 +6,7 @@ class Obj
 
 public :
 	Trans trans;
+	Obj(Trans t);
 	void Start();
-	void Update();
 };
 

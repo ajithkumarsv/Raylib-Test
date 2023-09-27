@@ -130,7 +130,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="Obj.cpp" />
+    <ClCompile Include="Entry.cpp" />
+    <ClCompile Include="Obj2D.cpp" />
+    <ClCompile Include="Trans.cpp" />
+    <ClCompile Include="Trans2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Obj.h" />
+    <ClInclude Include="Trans.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,11 +1,11 @@
 // Test.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include "raylib.h"
-#include "raymath.h"
+#include <raylib.h>
+#include <raymath.h>
+#include  "Obj2D.h"
 
-
-int main(int argc, char** argv)
+int main()
 {
 	const int screenWidth = 800;
 	const int screenHeight = 450;
@@ -13,6 +13,8 @@ int main(int argc, char** argv)
 	InitWindow(screenWidth, screenHeight, "raylib [core] example - keyboard input");
 
 	Vector2 ballPosition = { (float)screenWidth / 2, (float)screenHeight / 2 };
+	Trans2D trans = Trans2D(ballPosition, Vector3(), Vector3());
+	Obj2D obj = Obj2D(trans);
 
 
 	SetTargetFPS(60);       
@@ -25,10 +27,10 @@ int main(int argc, char** argv)
 	{
 		// Update
 		//----------------------------------------------------------------------------------
-		if (IsKeyDown(KEY_RIGHT)) ballPosition.x += 2.0f;
+		/*if (IsKeyDown(KEY_RIGHT)) ballPosition.x += 2.0f;
 		if (IsKeyDown(KEY_LEFT)) ballPosition.x -= 2.0f;
 		if (IsKeyDown(KEY_UP)) ballPosition.y -= 2.0f;
-		if (IsKeyDown(KEY_DOWN)) ballPosition.y += 2.0f;
+		if (IsKeyDown(KEY_DOWN)) ballPosition.y += 2.0f;*/
 
 		if (IsKeyDown(KEY_ESCAPE))
 		{
@@ -36,28 +38,16 @@ int main(int argc, char** argv)
 			//CloseWindow();
 		}
 		DrawText("This is Mine", 10, 10, 20, DARKGRAY);
-		//----------------------------------------------------------------------------------
-
-		// Draw
-		//----------------------------------------------------------------------------------
-		BeginDrawing();
 		
+		DrawCircle(obj.trans.position.x, obj.trans.position.y, 10, GRAY);
 		ClearBackground(RAYWHITE);
 
-		DrawText("move the ball with arrow keys", 10, 10, 20, DARKGRAY);
-
-		DrawCircleV(ballPosition, 50, MAROON);
-		Clamp(2.f, 0.f, 5.f);
-
+		
 		EndDrawing();
 		//----------------------------------------------------------------------------------
 	}
 
-	// De-Initialization
-	//--------------------------------------------------------------------------------------
-	      // Close window and OpenGL context
-	//--------------------------------------------------------------------------------------
-
+		return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

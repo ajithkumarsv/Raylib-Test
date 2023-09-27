@@ -7,6 +7,10 @@ Trans::Trans(Vector3 pos, Vector3 rot, Vector3 scale)
 	this->scale = scale;
 }
 
+Trans::Trans()
+{
+}
+
 Trans::~Trans()
 {
 }

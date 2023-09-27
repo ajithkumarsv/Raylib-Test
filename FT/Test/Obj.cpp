@@ -1,9 +1,13 @@
-#include "Obj.h"
+#include "Obj.h";
+#include "Trans.h";
+
+Obj::Obj(Trans t)
+{
+	trans = t;
+}
 
 void Obj::Start()
 {
 }
 
-void Obj::Update()
-{
-}
+
